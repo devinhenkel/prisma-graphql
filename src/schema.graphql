@@ -50,6 +50,7 @@ input CreateUserInput {
     lastname: String
     email: String!
     password: String!
+    register: Boolean
 }
 
 input UpdateUserInput {
