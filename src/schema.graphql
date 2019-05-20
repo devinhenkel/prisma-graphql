@@ -89,7 +89,8 @@ input UpdatePostInput {
 
 input AddCommentInput {
     text: String!
-    post: ID!
+    post: Post!
+    author: User!
 }
 
 input CommentWhereInput {
