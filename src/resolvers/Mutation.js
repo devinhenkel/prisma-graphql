@@ -29,13 +29,13 @@ dummy() */
 
 const Mutation = {
     async createUser(parent, args, { prisma, request }, info) {
-        if (!args.data.register) {
+        /* if (!args.data.register) {
             const userId = getUserId(request)
             const isAdmin = await getUserAdmin(prisma, userId)
             if (!isAdmin) {
                 throw new Error('Must be Admin to create users.')
             }
-        }
+        } */
 
         const emailVal = require('email-validator')
         if(!emailVal.validate(args.data.email)) {
