@@ -1173,6 +1173,7 @@ input UserCreateInput {
   lastname: String
   email: String!
   password: String!
+  register: Boolean
   roles: UserCreaterolesInput
   posts: PostCreateManyWithoutAuthorInput
   comments: CommentCreateManyWithoutAuthorInput
