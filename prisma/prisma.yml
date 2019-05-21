@@ -2,4 +2,3 @@ endpoint: ${env:PRISMA_ENDPOINT}
 #endpoint: http://localhost:4466
 datamodel: datamodel.prisma
 secret: ${env:PRISMA_SECRET}
-#secret: 60ff52c575ac4706987c9c55960a0f25
