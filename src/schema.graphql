@@ -88,8 +88,8 @@ input UpdatePostInput {
 
 input AddCommentInput {
     text: String!
-    post: Post!
-    author: User!
+    post: PostWhereUniqueInput!
+    author: UserWhereUniqueInput!
 }
 
 input CommentWhereInput {
