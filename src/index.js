@@ -1,5 +1,5 @@
 //import GraphQLServer
-import '@babel/polyfill'
+import '@babel/polyfill/noConflict'
 import { GraphQLServer, PubSub } from 'graphql-yoga'
 import db from './db'
 import { resolvers, fragmentReplacements } from './resolvers/index'
